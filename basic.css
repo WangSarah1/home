@@ -33,7 +33,7 @@ nav ul li a:hover, #current{
 	border-radius: 5px;
 }
 
-#introduction{
+.first-heading{
 	margin-top: 55px;
 }
 
@@ -47,8 +47,16 @@ body{
     background-size: auto;
 	margin-left: 10px;
 	color: White;
-	font-family: Candara;
+	font-family: Candara, Arial, Times New Roman;
 	
+}
+
+h2{
+	font-size: 35px;
+}
+
+p, ul, li, a, b{
+	font-size: 25px;
 }
 
 
@@ -57,4 +65,79 @@ iframe#sources{
 	height: 640px;
 	width: 100%;
 }
-	
+
+a{
+	color:#a5c1fa;
+}
+
+a:hover{   /*Yes, including the Navigation bar (this is intentional) */
+	color:#c4d4f5;
+}
+
+img.left{
+	float: left;
+	padding-right: 45px;
+	padding-left: 10px;
+}
+
+img.right{
+	float: right;
+	padding-left: 45px;
+	padding-right: 10px;
+}
+
+
+footer > a{
+	font-size: 20px;
+}
+
+#banner{
+	width: 100%;
+	height: 200px;
+}
+
+div.gallery{
+	border: 3px dashed White;
+	background-color: #000000
+}
+
+.interaction{
+	font-size: 27px;
+	font-weight: bold;
+	color: #bdffcd
+}
+
+.sabotage{
+	font-size: 27px;
+	font-weight: bold;
+	color: #fa9d9d
+}
+
+th{
+	font-size: 22px;
+}
+
+td{
+	font-size: 20px;
+}
+
+.crewmates{
+	background-color: #0b3f42;
+}
+
+.impostors{
+	background-color: #610b0b;
+}
+
+.neutral{
+	background-color: #3c3d3a;
+}
+
+li:hover{
+	color: #dedede;
+}
+
+#citations, #citations > a{
+	font-size: 18px;
+	color: White;
+}
