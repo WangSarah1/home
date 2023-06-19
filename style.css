@@ -26,7 +26,7 @@ nav ul li a{
 	color: White;
 	text-decoration: none;
 	padding: 7px 10px;
-	font-family:Candara;
+	font-family:Candara, Arial, "Times New Roman";
 	font-size:20px;
 }
 
@@ -51,7 +51,7 @@ body{
 	
 	/* Text and text styling*/
 	color: White;
-	font-family: Candara, Arial, Times New Roman;
+	font-family: Candara, Arial, "Times New Roman";
 }
 
 
@@ -222,3 +222,4 @@ header, footer{
 	height: 50%;
 	width: 100%;
 }
+
