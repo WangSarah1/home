@@ -1,7 +1,7 @@
-/*i love css */
+/* The CSS File for my website */
+
 header{
-	/* Setting the colours and dimensions of the top header */
-	background-color: #4f4f4f;
+	/* Setting the dimensions of the top header */
 	padding: 13px;
 	/* Making the top header bar span the entire width of the page */
 	position: fixed;
@@ -10,7 +10,9 @@ header{
 	width: 100%;
 }
 
-nav ul{   /* idek man */
+
+/* Making the navigation bar */
+nav ul{
 	list-style-type: none;
 	margin: 0;
 }
@@ -28,24 +30,32 @@ nav ul li a{
 	font-size:20px;
 }
 
+/* Changing the colour of the buttons when you hover over them/click on them */
 nav ul li a:hover, #current{
 	background-color: #3d3d3d;
 	border-radius: 5px;
 }
 
+/* Making sure things don't overlap with the header */
 .first-heading{
 	margin-top: 55px;
 }
 
+/* General body styling */
 body{
+	/* Editing the background image to continue on loop/repeat */
 	background-image: url("images/background.png");
     background-repeat: repeat;
     background-size: auto;
 	margin-left: 10px;
+	
+	/* Text and text styling*/
 	color: White;
 	font-family: Candara, Arial, Times New Roman;
 }
 
+
+/* More specific text styling */
 h1{
 	font-size: 50px;
 }
@@ -62,6 +72,9 @@ p, ul, li, a, b{
 	font-size: 25px;
 }
 
+h1, h2, h3, p, ul, li, b{
+	margin-left: 25px;
+}
 
 iframe#sources{
 	margin-top: 55px;
@@ -69,14 +82,17 @@ iframe#sources{
 	width: 100%;
 }
 
+/* default link colours */
 a{
 	color:#a5c1fa;
 }
 
-a:hover{   /*Yes, including the Navigation bar (this is intentional) */
+a:hover{   /* Yes, including the Navigation bar (this is intentional) */
 	color:#c4d4f5;
 }
 
+
+/* Formatting images to wrap around text*/
 figure.left{
 	float: left;
 	padding-right: 45px;
@@ -89,21 +105,25 @@ figure.right{
 	padding-right: 10px;
 }
 
-
+/* Footer link text styles*/
 footer > a{
 	font-size: 20px;
 }
 
+/* Image at the top, underneath navigation bar */
 #banner{
 	width: 100%;
 	height: 200px;
 }
 
+
+/* Formatting the images in the gallery */
 div.gallery{
 	border: 3px dashed White;
 	background-color: #000000
 }
 
+/* Formatting the spans for interactiosn and sabotages */
 .interaction{
 	font-size: 27px;
 	font-weight: bold;
@@ -116,6 +136,16 @@ div.gallery{
 	color: #fa9d9d
 }
 
+/* Styling tables */
+table {
+	border-collapse: collapse;   /* Getting rid of the "double border" that appears */
+}
+
+td, th {
+	border: 1px solid white;
+	padding: 10px;
+}
+
 th{
 	font-size: 22px;
 }
@@ -124,6 +154,7 @@ td{
 	font-size: 20px;
 }
 
+/* Background colours for each role */
 .crewmates{
 	background-color: #0b3f42;
 }
@@ -136,37 +167,58 @@ td{
 	background-color: #3c3d3a;
 }
 
+
+/* Making lists more interactive (doing this with paragraphs is a bit too messy) */
 li:hover{
 	color: #dedede;
 }
 
+/* Editing/changing the citations page */
 #citations, #citations > a{
 	font-size: 18px;
 	color: White;
 }
 
+/* Styling the captiosn that go under some images (citations) */
 figcaption{
 	font-size:8px;
 }
 
+/* replacing the <b> tag */
 .bold{
 	font-weight: bold;
 }
 
-table {
-	border-collapse: collapse;
-}
-
-td, th {
-	border: 1px solid white;
-	padding: 10px;
-}
-
+/* Centering tables */
 table.center{
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Centering text */
 .center{
 	text-align: Center;
+}
+
+/* Changing the background colour of headers and footers */
+header, footer{
+	background-color: #4f4f4f;
+}
+
+/* Specific image dimensions (so the validator doesn't give me an error and it's relative) */
+.gallery > img{
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	width: 60%;
+	height: 60%;
+}
+
+.gallery {
+  text-align: center;
+}
+
+#reachahead{
+	height: 50%;
+	width: 100%;
 }
