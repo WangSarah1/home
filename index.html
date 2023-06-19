@@ -1,15 +1,18 @@
-<!--This is html - what is amongus, how to play, etc.-->
+<!-- HTML code for home page - basic information (how to play, what is it, etc.) -->
+
 <!doctype html>
 <html lang = "en">
+	<!-- Header information -->
 	<head>
 		<meta charset = "UTF-8">
 		<title>Home</title>
 		<link rel = "stylesheet" type = "text/css" href = "style.css">
-		<link rel = "icon" type = "image/icon" href = "images/amongus_title.png">
+		<link rel = "icon" type = "image/icon" href = "images/amongus_title.png">  <!-- adding an icon to the tab/title bar -->
 	</head>
 	
 	<body>
 		<header>
+			<!-- Code for the navigration menu/navigation bar -->
 			<nav>
 			  <ul>
 				<li><a href="index.html" id = "current">Home</a></li>
@@ -21,8 +24,11 @@
 			  </ul>
 			</nav>
 		</header>
+		<!-- Image for the banner that follows the nav bar -->
 		<img src = "images/amongusbanner.png" alt = "among us banner" id = "banner" class = "first-heading">
 		
+		
+		<!-- Content - All about the game -->
 		<h1>Introduction</h1>
 		<h2>What is Among Us?</h2>
 			<p>
@@ -34,12 +40,14 @@
 			</p>
 		<h2>Table of Contents</h2>
 			<ul>
+				<!-- Links to other parts of the page, starting after the heading and going straight to the content -->
 				<li><a href = "#HowToPlay">How To Play</a></li>
 				<li><a href = "#lore">Lore</a></li>
 				<li><a href = "#customization">Customization</a></li>
 			</ul>
 		<hr>
 		
+		<!-- Content - explaining rules -->
 		<h1 id = "HowToPlay">How to Play</h1>
 			<figure class = "right">
 				<img src = "images/main_menu.png" height = "500" width = "595" alt = "among us main menu" >
@@ -48,12 +56,13 @@
 			
 			<p>
 				The game can be played with 4-15 players. When the game starts, each player is randomy assigned a role, either
-				Crewmate or Impostor (1-3 players). Imposters will know who the other imposters are, but Crewmates will not. Players are then released onto the selected map and start the game.
+				Crewmate (3-14 players) or Impostor (1-3 players). Imposters will know who their teammates are, while Crewmates will not. Players are then released onto the selected map and start the game.
 				<br>
 				<br>
-				This is where the social deduction part comes in play. As Crewmates are doing their tasks and filling up the task bar, Impostors need
-				to blend in and appear innocent (while killing off unsuspecting Crewmates). When a player finds a dead body, an emergency meeting is called. Here,
-				the players discuss who they think the culprit is. The players are then given a chance to vote someone off - whoever gets
+				This is where the social deduction part comes into play. As Crewmates are doing their tasks and filling up the task bar, Impostors need
+				to blend in and appear innocent (while killing off unsuspecting Crewmates). When a player finds a dead body, an emergency meeting is called. 
+				<br>
+				Here, the players discuss who they think the culprit is. The players are then given a chance to vote someone off - whoever gets
 				majority votes will be ejected off the ship. During these meetings, Imposters try their best to not seem suspicious as everyone else goes over
 				what they were doing, where they were, etc. 
 				<br>
@@ -61,6 +70,7 @@
 				call sabotages, crawl in the vents, as well as kill Crewmates.
 				<br><br>
 			
+			<!-- Styling image - formatting it, as well as adding citation underneath -->
 			<figure class = "right">
 				<img src = "images/victory.png" height = "470" width = "775" class = "right">
 				<figcaption>Marcus B. & Kristi A. (2018). Among Us. (Version 2022.8. 23) [Video Game]. Innersloth.</figcaption>
@@ -69,7 +79,7 @@
 			<hr>
 			<h2>There are a couple ways for each team to win:</h2>
 
-			<span class = "bold">Crewmates:</span>
+			<p><span class = "bold">Crewmates:</span></p>
 			
 			<ul>
 				<li>Complete all their tasks (see <a href = "maps_tasks.html">Maps and Tasks</a> for more info)</li>
@@ -81,7 +91,8 @@
 				<li>Kill or vote off Crewmates (They win when the number of remaining Impostors tie the number of remaining Crewmates)</li>
 			</ul>
 			<hr>
-			
+		
+		<!-- Content - story aspect -->		
 		<h1 id = "lore">Lore</h1>
 			<p>
 				There are multiple theories that try to explain what exactly is going on in Among Us. 
@@ -89,20 +100,21 @@
 				<br>
 				We know Impostors are parasites - this was confirmed by the developers. Many people speculate they're able to shapeshift,
 				turning themselves into the recognisable Crewmate. They're also immune to oxygen and light sabotages, leading many to make the
-				connection that they don't need to breathe and have night-vision. Additionally, it's likely that the Impostors had some control over
+				connection that they have night-vision and don't need to breathe. Additionally, it's likely that the Impostors had some control over
 				the SKELD ship, even before the Crewmates. The main evidence for this is the <span class = "bold">Impostor sabotage menu.</span>
 				<br>
 				Why would they have access to the control panel when Crewmates don't? Why can they vent all over the ship while Crewmates can't?
 				<br>
 				People also can't make up their mind when it comes to the incentive of the Crewmates. Going with what we've clarified above, it's natural to
-				think the Crewmates are the bad guys, looting everything the Impostors have ever owned. The Impostors, on the other hand, are just
-				trying to keep them off their ship. It's also possible the crewmates are just researchers studying space - MIRA HQ is their headquarters, the SKELD ship
+				think the Crewmates are actually the bad guys, looting everything the Impostors have ever owned. The Impostors, on the other hand, are just
+				trying to keep their ship protected. It's also possible the crewmates are just researchers studying space - MIRA HQ is their headquarters, the SKELD ship
 				flies them through space and towards the POLUS planet.
 				<br>
 				To this day, we still don't know what the real story behind Among Us is. The developers are yet to confirm many details and fan theories. Currently, 
-				it's all up to the players to decide what the true meaning behind this game is. 
+				it's all up to the players to decide on the true meaning behind the game. 
 			</p>
 			
+			<!-- Formatting video iframes -->
 			<p class = "center">
 				Here are some Youtube Videos going over a couple of theories:
 				<br>
@@ -112,33 +124,38 @@
 			</p>
 			
 			<hr>
-			
+		
+		<!-- Content - Character customization -->		
 		<h1 id = "customization">Customization</h1>
+			<!-- Another image with captions -->
 			<figure class = "right">
 				<img src = "images/monicas_drawing.png" height = "475" width = "475" alt = "monica's beautiful drawing">
 				<figcaption>Chen, M. (2023). Among Us. [Digital Artwork Inspired by Among Us]. Personal collection.</figcaption>
 			</figure>
+			
 			<p>
 				Among us also allows players to express themselves through their in-game avatar. Players are able to put on various hats, 
-				suits, and other accessories. Some items (pets, etc.), however, are only accessible through the <span class = "bold">$5</span> paid version of the game.
+				suits, and other accessories. Some items (pets, certain outfits), however, are only accessible through the <span class = "bold">$5</span> paid version of the game.
 				The game is heavily centered around the idea that every player is a different colour, making it easy to differentiate between players
-				and figure out who was where. Players tend to refer to players by their colour, whether that be in the game chat or through a voice call.
-				It's usually used in place of a players name/username. Examples include asking for Red's location instead of coolgamer123's location. 
+				and figure out who was where. Players tend to refer to others by their colour, whether that be in the game chat or through a voice call.
+				It's usually used in place of a players name/username. Examples include asking for "Red's" location instead of "coolgamer123's" location. 
 				Players are able to choose their colours in the lobby before the game starts, as well as equip any accessories they may want to wear.
-				Some accessories have special features. This includes all of the pets, where if the owner dies, the pet will sit in that spot and
-				never move. It's quite sad, but adds a nice detail for other people to find and notice, sometimes helping Crewmates find the 
+				Some accessories have special features. This includes all of the pets, where the pet will sit and never move if their owner dies.
+				It's quite sad, but adds a nice detail for others to notice, sometimes helping Crewmates find the 
 				Impostors faster.
 				<br><br>
 				The new update introduced something called a <span class = "bold">Cosmicube</span>. It's like a <a href = "https://www.epicgames.com/help/en-US/fortnite-c5719335176219/battle-royale-c5719350646299/what-is-the-battle-pass-where-can-i-learn-more-a5720283337115">Fortnite Battle Pass</a>, 
-				where you're able to unlock rewards the
-				more you play and complete objectives. Some cosmetics are locked behind these rewards, like changing your name background.
+				where you're able to unlock more rewards the
+				more you play and complete objectives. Some cosmetics are locked behind these rewards, like the ability to change your name background.
 			</p>
 		
 		<footer>
 			<hr>
-			<a href = "#Top">Back to Top</a>
+			<a href = "#Top">Back to Top</a>   <!-- Jump back to top -->
 			<br>
 			<br>
+			
+			<!-- Validating HTML and CSS -->
 			<a href = "https://www.google.ca"><img src = "images/html_validator.png" height = "50" width = "100" alt = "html validator"></a>
 			<a href = "https://www.google.ca"><img src = "images/css_validator.png" height = "50" width = "100" alt = "css validator"></a>
 		</footer>
