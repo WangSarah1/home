@@ -188,6 +188,7 @@ div.gallery{
 	height: 60%;
 }
 
+/* For some reason this only centers my images if its separate */
 .gallery {
 	text-align: center;
 }
