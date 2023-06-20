@@ -32,6 +32,7 @@ nav ul li a{
 nav ul li a:hover, #current{
 	background-color: #3d3d3d;
 	border-radius: 5px;
+	transition: .5s;
 }
 
 /* Making sure things don't overlap with the header */
