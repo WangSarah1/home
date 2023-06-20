@@ -10,7 +10,6 @@ header{
 	width: 100%;
 }
 
-
 /* Making the navigation bar */
 nav ul{
 	list-style-type: none;
@@ -26,8 +25,7 @@ nav ul li a{
 	color: White;
 	text-decoration: none;
 	padding: 7px 10px;
-	font-family:Candara, Arial, "Times New Roman";
-	font-size:20px;
+	font: 20px Candara, Arial, "Times New Roman";
 }
 
 /* Changing the colour of the buttons when you hover over them/click on them */
@@ -39,6 +37,12 @@ nav ul li a:hover, #current{
 /* Making sure things don't overlap with the header */
 .first-heading{
 	margin-top: 55px;
+}
+
+/* Image at the top, underneath navigation bar */
+#banner{
+	width: 100%;
+	height: 200px;
 }
 
 /* General body styling */
@@ -54,7 +58,6 @@ body{
 	font-family: Candara, Arial, "Times New Roman";
 }
 
-
 /* More specific text styling */
 h1{
 	font-size: 50px;
@@ -68,6 +71,7 @@ h3{
 	font-size: 25px;
 }
 
+/* Consistent sizes */
 p, ul, li, a, b{
 	font-size: 25px;
 }
@@ -76,10 +80,9 @@ h1, h2, h3, p, ul, li, b{
 	margin-left: 25px;
 }
 
-iframe#sources{
-	margin-top: 55px;
-	height: 640px;
-	width: 100%;
+/* replacing the <b> tag */
+.bold{
+	font-weight: bold;
 }
 
 /* default link colours */
@@ -91,6 +94,10 @@ a:hover{   /* Yes, including the Navigation bar (this is intentional) */
 	color:#c4d4f5;
 }
 
+/* Making lists more interactive (doing this with paragraphs is a bit too messy) */
+li:hover{
+	color: #dedede;
+}
 
 /* Formatting images to wrap around text*/
 figure.left{
@@ -105,22 +112,9 @@ figure.right{
 	padding-right: 10px;
 }
 
-/* Footer link text styles*/
-footer > a{
-	font-size: 20px;
-}
-
-/* Image at the top, underneath navigation bar */
-#banner{
-	width: 100%;
-	height: 200px;
-}
-
-
-/* Formatting the images in the gallery */
-div.gallery{
-	border: 3px dashed White;
-	background-color: #000000
+/* Styling the captiosn that go under some images (citations) */
+figcaption{
+	font-size:8px;
 }
 
 /* Formatting the spans for interactiosn and sabotages */
@@ -167,26 +161,10 @@ td{
 	background-color: #3c3d3a;
 }
 
-
-/* Making lists more interactive (doing this with paragraphs is a bit too messy) */
-li:hover{
-	color: #dedede;
-}
-
 /* Editing/changing the citations page */
 #citations, #citations > a{
 	font-size: 18px;
 	color: White;
-}
-
-/* Styling the captiosn that go under some images (citations) */
-figcaption{
-	font-size:8px;
-}
-
-/* replacing the <b> tag */
-.bold{
-	font-weight: bold;
 }
 
 /* Centering tables */
@@ -200,9 +178,10 @@ table.center{
 	text-align: Center;
 }
 
-/* Changing the background colour of headers and footers */
-header, footer{
-	background-color: #4f4f4f;
+/* Formatting the gallery background*/
+div.gallery{
+	border: 3px dashed White;
+	background-color: #000000
 }
 
 /* Specific image dimensions (so the validator doesn't give me an error and it's relative) */
@@ -215,11 +194,21 @@ header, footer{
 }
 
 .gallery {
-  text-align: center;
+	text-align: center;
 }
 
+/* Specific dimensiosn for the last photo in the gallery */
 #reachahead{
 	height: 50%;
 	width: 100%;
 }
 
+/* Changing the background colour of headers and footers */
+header, footer{
+	background-color: #4f4f4f;
+}
+
+/* Footer link text styles*/
+footer > a{
+	font-size: 20px;
+}
